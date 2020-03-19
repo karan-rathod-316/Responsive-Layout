@@ -453,6 +453,16 @@
     .fab {
         color: #dff5e1;
     }
+    
+    span {
+        display: inline-block;
+        border-radius: 50%;
+        height: 23px;
+        width: 23px;
+        border: oldlace 1px solid;
+        margin: 0 auto;
+        padding-top: 2px;
+    }
     /* footer */
     
     .footer-para {
@@ -461,10 +471,20 @@
         background-color: #19242e;
         color: #dff5e1;
         padding-bottom: 30px;
+        width: 100%;
     }
     /* responsive */
     
     @media all and (max-width:768px) {
+        h1 {
+            font-size: 20px;
+        }
+        .byline {
+            font-size: 15px;
+        }
+        nav {
+            display: none;
+        }
         .flex {
             display: flex;
             justify-content: space-between;
@@ -472,28 +492,58 @@
             flex-wrap: wrap;
             flex-direction: column;
         }
+        .container2 {
+            width: 90%;
+        }
         .about-flex {
             display: flex;
             justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
             color: #E1F7E4;
             flex-direction: column;
         }
+        .form-container {
+            width: 100%;
+        }
+        .map-container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+        .table-container {
+            max-width: 100%;
+            margin: 0 auto;
+            /* margin-right: 10px; */
+        }
+        th,
+        td {
+            padding: 0px;
+            text-align: left;
+        }
+        .about-container {
+            width: 100%;
+        }
         .section-three-left,
         .section-three-right {
             width: 100%;
+            /* margin: 10px; */
         }
         .col {
-            width: 50%;
+            width: 100%;
         }
-        .map-container {
-            width: 450px;
-            margin: 0 auto;
-            padding-top: 0;
-            padding-bottom: 80px
+        .name,
+        .email,
+        .phone,
+        .message {
+            width: 90%;
         }
-        .table-container {
-            width: 450px;
-            margin: 0 auto;
+        .portfolio-header,
+        h3,
+        .form-header,
+        h5,
+        .table-header,
+        .about-social-padding {
+            font-size: 20px;
         }
     }
